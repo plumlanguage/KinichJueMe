@@ -73,7 +73,9 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push -u origin main
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;如果以上方法不可以成功推送项目文件的话，放心！在创建一个新的空的GitHub仓库时，可以参考一下里面的push提示&lt;/p&gt;&lt;/blockquote&gt;
+</description>
         </item>
         <item>
         <title>Go语言学习笔记</title>
@@ -82,6 +84,30 @@
         
         <guid>https://plumlanguage.github.io/KinichJueMe/p/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
         <description>&lt;img src="https://plumlanguage.github.io/KinichJueMe/p/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/go.png" alt="Featured image of post Go语言学习笔记" /&gt;</description>
+        </item>
+        <item>
+        <title>MXD-海淀绿撞</title>
+        <link>https://plumlanguage.github.io/KinichJueMe/p/%E6%B5%B7%E6%B7%80%E7%BB%BF%E6%92%9E/</link>
+        <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://plumlanguage.github.io/KinichJueMe/p/%E6%B5%B7%E6%B7%80%E7%BB%BF%E6%92%9E/</guid>
+        <description>&lt;p&gt;&lt;em&gt;此文档由MXD协会编写&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;简介&#34;&gt;简介
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;名称&lt;/strong&gt;:海淀绿撞&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;编号&lt;/strong&gt;:MXD-001&lt;/p&gt;
+&lt;h3 id=&#34;前言&#34;&gt;前言
+&lt;/h3&gt;&lt;p&gt;相传是一个时刻会失控的一个核弹，此人语言中枢与前额叶被完全解离（不是说话不过脑子的意思），[通过语言获取说话者的心情]这种把戏对他丝毫不起作用。&lt;/p&gt;
+&lt;h3 id=&#34;影响&#34;&gt;影响
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;精神污染&lt;/strong&gt;:如果你与他长期相处，你会发现他的精神状态会变得非常不稳定，甚至会出现一些难以解释的行为。
+&lt;strong&gt;情感困扰&lt;/strong&gt;:他的语言能力可能会影响到你的情感状态，导致你难以理解他的感受。&lt;/p&gt;
+&lt;h3 id=&#34;注意事项&#34;&gt;注意事项
+&lt;/h3&gt;&lt;p&gt;如果你想与他建立长期的关系，你需要注意以下几点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不要过于频繁地与他交流，以免影响他的精神状态。&lt;/li&gt;
+&lt;li&gt;避免使用他的语言来表达你的情感，以免影响你的感受。&lt;/li&gt;
+&lt;li&gt;不要过于依赖他的语言能力，以免影响你的生活。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
         </item>
         <item>
         <title>图库</title>
