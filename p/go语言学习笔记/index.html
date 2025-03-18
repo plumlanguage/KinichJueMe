@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="开始 创建项目 1.创建有一个文件夹并进入\n1 2 mkdir hello cd hello 以hello文件名打比方\n初始化mod文件 mod文件可以在我们的项目处在GitHub的时候快捷的被他人引用。通过一下命令可以快速添加初始化应该mod文件。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="此文档适合有其他编程语言基础的人阅读，如果你要阅读这个文档你需要知道：1.基础概念2.语法基础\n开始 创建项目 1.创建有一个文件夹并进入\n1 2 mkdir hello cd hello 以hello文件名打比方\n">
 <title>Go语言学习笔记</title>
 
 <link rel='canonical' href='https://plumlanguage.github.io/KinichJueMe/p/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
 
 <link rel="stylesheet" href="/KinichJueMe/scss/style.min.b41fbeb1758861b170a462ca5c5b93b973caa976a8f1c39fb877a49158ef60fb.css"><meta property='og:title' content="Go语言学习笔记">
-<meta property='og:description' content="开始 创建项目 1.创建有一个文件夹并进入\n1 2 mkdir hello cd hello 以hello文件名打比方\n初始化mod文件 mod文件可以在我们的项目处在GitHub的时候快捷的被他人引用。通过一下命令可以快速添加初始化应该mod文件。\n">
+<meta property='og:description' content="此文档适合有其他编程语言基础的人阅读，如果你要阅读这个文档你需要知道：1.基础概念2.语法基础\n开始 创建项目 1.创建有一个文件夹并进入\n1 2 mkdir hello cd hello 以hello文件名打比方\n">
 <meta property='og:url' content='https://plumlanguage.github.io/KinichJueMe/p/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
 <meta property='og:site_name' content='KinichJueMe'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-17T00:00:00&#43;00:00'/><meta property='og:image' content='https://plumlanguage.github.io/KinichJueMe/p/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/go.png' />
 <meta name="twitter:title" content="Go语言学习笔记">
-<meta name="twitter:description" content="开始 创建项目 1.创建有一个文件夹并进入\n1 2 mkdir hello cd hello 以hello文件名打比方\n初始化mod文件 mod文件可以在我们的项目处在GitHub的时候快捷的被他人引用。通过一下命令可以快速添加初始化应该mod文件。\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="此文档适合有其他编程语言基础的人阅读，如果你要阅读这个文档你需要知道：1.基础概念2.语法基础\n开始 创建项目 1.创建有一个文件夹并进入\n1 2 mkdir hello cd hello 以hello文件名打比方\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://plumlanguage.github.io/KinichJueMe/p/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/go.png' />
     <link rel="shortcut icon" href="/KinichJueMe/static/favicon.ico" />
 
@@ -303,6 +303,57 @@
             <li><a href="#select-语句">select 语句</a></li>
           </ol>
         </li>
+        <li><a href="#循环语句">循环语句</a>
+          <ol>
+            <li><a href="#for-循环">for 循环</a></li>
+            <li><a href="#循环控制语句">循环控制语句</a></li>
+            <li><a href="#无限循环">无限循环</a></li>
+          </ol>
+        </li>
+        <li><a href="#函数">函数</a>
+          <ol>
+            <li><a href="#函数声明">函数声明</a></li>
+            <li><a href="#函数调用">函数调用</a></li>
+            <li><a href="#函数的用法">函数的用法</a></li>
+          </ol>
+        </li>
+        <li><a href="#数组">数组</a>
+          <ol>
+            <li><a href="#数组声明">数组声明</a></li>
+            <li><a href="#访问数组元素">访问数组元素</a></li>
+            <li><a href="#遍历数组">遍历数组</a></li>
+            <li><a href="#更多内容">更多内容</a></li>
+          </ol>
+        </li>
+        <li><a href="#结构体">结构体</a>
+          <ol>
+            <li><a href="#结构体声明">结构体声明</a></li>
+            <li><a href="#结构体实例化">结构体实例化</a></li>
+            <li><a href="#访问结构体成员">访问结构体成员</a></li>
+            <li><a href="#结构体方法">结构体方法</a></li>
+            <li><a href="#类型转换">类型转换</a></li>
+          </ol>
+        </li>
+        <li><a href="#接口">接口</a>
+          <ol>
+            <li><a href="#接口声明">接口声明</a></li>
+            <li><a href="#接口实现">接口实现</a></li>
+            <li><a href="#空接口">空接口</a></li>
+          </ol>
+        </li>
+        <li><a href="#错误处理">错误处理</a>
+          <ol>
+            <li><a href="#错误声明">错误声明</a></li>
+            <li><a href="#错误处理-1">错误处理</a></li>
+            <li><a href="#自定义错误">自定义错误</a></li>
+            <li><a href="#触发自定义错误">触发自定义错误</a></li>
+          </ol>
+        </li>
+        <li><a href="#并发多线程">并发（多线程）</a>
+          <ol>
+            <li><a href="#goroutine最简单最轻量">Goroutine(最简单最轻量)</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -389,7 +440,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 4 分钟
+                    阅读时长: 6 分钟
                 </time>
             </div>
         
@@ -404,7 +455,8 @@
     <section class="article-content">
     
     
-    <h2 id="开始">开始
+    <p><strong>此文档适合有其他编程语言基础的人阅读，如果你要阅读这个文档你需要知道：<br/>1.基础概念<br/>2.语法基础</strong></p>
+<h2 id="开始">开始
 </h2><h3 id="创建项目">创建项目
 </h3><p>1.创建有一个文件夹并进入</p>
 <div class="highlight"><div class="chroma">
@@ -656,7 +708,458 @@ Go 将添加模块作为需求，以及 go.sum 文件，用于对模块进行身
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h3 id="循环语句">循环语句
+</h3><h4 id="for-循环">for 循环
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">for</span> <span class="nx">初始化</span><span class="p">;</span> <span class="nx">条件</span><span class="p">;</span> <span class="nx">递增</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 循环体</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
+</div><h4 id="循环控制语句">循环控制语句
+</h4><ul>
+<li><code>break</code>：跳出循环<a class="link" href="https://www.runoob.com/go/go-break-statement.html"  target="_blank" rel="noopener"
+    >菜鸟教程</a></li>
+<li><code>continue</code>：跳过当前循环，进入下一次循环<a class="link" href="https://www.runoob.com/go/go-continue-statement.html"  target="_blank" rel="noopener"
+    >菜鸟教程</a></li>
+<li><code>goto</code>：跳转到指定标签处<a class="link" href="https://www.runoob.com/go/go-goto-statement.html"  target="_blank" rel="noopener"
+    >菜鸟教程</a></li>
+</ul>
+<h4 id="无限循环">无限循环
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">for</span> <span class="kc">true</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 无限循环体</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">####</span> <span class="nx">循环嵌套</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s">``</span><span class="err">`</span><span class="k">go</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="nx">初始化</span><span class="p">;</span> <span class="nx">条件</span><span class="p">;</span> <span class="nx">递增</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">初始化</span><span class="p">;</span> <span class="nx">条件</span><span class="p">;</span> <span class="nx">递增</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 循环体</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="函数">函数
+</h3><h4 id="函数声明">函数声明
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nx">函数名</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span> <span class="nx">返回值类型</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 函数体</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 返回多个值</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nx">函数名</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span> <span class="p">(</span><span class="nx">返回值类型1</span><span class="p">,</span> <span class="nx">返回值类型2</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 函数体</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 无返回值</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nx">函数名</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 函数体</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="函数调用">函数调用
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// 返回单个值</span>
+</span></span><span class="line"><span class="cl"><span class="nx">返回值</span> <span class="p">=</span> <span class="nx">函数名</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 返回多个值</span>
+</span></span><span class="line"><span class="cl"><span class="nx">返回值1</span><span class="p">,</span> <span class="nx">返回值2</span> <span class="p">=</span> <span class="nx">函数名</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 无返回值</span>
+</span></span><span class="line"><span class="cl"><span class="nx">函数名</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>当调用一个有返回值的函数时，可以使用<code>_</code>代替变量名来忽略返回值。即返回值不使用。</p></blockquote>
+<h4 id="函数的用法">函数的用法
+</h4><p><a class="link" href="https://www.runoob.com/go/go-function-as-values.html"  target="_blank" rel="noopener"
+    >函数作为另外一个函数的实参</a>|<a class="link" href="https://www.runoob.com/go/go-function-closures.html"  target="_blank" rel="noopener"
+    >闭包</a>|<a class="link" href="https://www.runoob.com/go/go-method.html"  target="_blank" rel="noopener"
+    >方法</a></p>
+<h3 id="数组">数组
+</h3><h4 id="数组声明">数组声明
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">数组名</span> <span class="p">[</span><span class="nx">数组长度</span><span class="p">]</span><span class="nx">数组类型</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 初始化数组</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">数组名</span> <span class="p">=</span> <span class="p">[</span><span class="nx">数组长度</span><span class="p">]</span><span class="nx">数组类型</span><span class="p">{</span><span class="nx">值1</span><span class="p">,</span> <span class="nx">值2</span><span class="p">,</span> <span class="err">···</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="访问数组元素">访问数组元素
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">数组名</span><span class="p">[</span><span class="nx">索引</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="遍历数组">遍历数组
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">for</span> <span class="nx">索引</span><span class="p">,</span> <span class="nx">值</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">数组名</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 循环体</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="更多内容">更多内容
+</h4><p><a class="link" href="https://www.runoob.com/go/go-multi-dimensional-arrays.html"  target="_blank" rel="noopener"
+    >多维数组</a>|<a class="link" href="https://www.runoob.com/go/go-passing-arrays-to-functions.html"  target="_blank" rel="noopener"
+    >向数组传递数组</a></p>
+<h3 id="结构体">结构体
+</h3><h4 id="结构体声明">结构体声明
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">结构体名</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">字段1</span> <span class="nx">字段类型</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">字段2</span> <span class="nx">字段类型</span>
+</span></span><span class="line"><span class="cl">    <span class="err">···</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="结构体实例化">结构体实例化
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// 声明结构体类型变量</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">变量名</span> <span class="nx">结构体名</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 实例化结构体类型变量</span>
+</span></span><span class="line"><span class="cl"><span class="nx">变量名</span> <span class="p">=</span> <span class="nx">结构体名</span><span class="p">{</span><span class="nx">值1</span><span class="p">,</span> <span class="nx">值2</span><span class="p">,</span> <span class="err">···</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 声明结构体类型变量并实例化</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">变量名</span> <span class="p">=</span> <span class="nx">结构体名</span><span class="p">{</span><span class="nx">值1</span><span class="p">,</span> <span class="nx">值2</span><span class="p">,</span> <span class="err">···</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="访问结构体成员">访问结构体成员
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">变量名</span><span class="p">.</span><span class="nx">字段名</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="结构体方法">结构体方法
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">结构体变量</span> <span class="nx">结构体类型</span><span class="p">)</span> <span class="nx">方法名</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span> <span class="nx">返回值类型</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 方法体</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 示例</span>
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Person</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Name</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Age</span>  <span class="kt">int</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">p</span> <span class="nx">Person</span><span class="p">)</span> <span class="nf">SayHello</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, my name is&#34;</span><span class="p">,</span> <span class="nx">p</span><span class="p">.</span><span class="nx">Name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="类型转换">类型转换
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// 结构体类型转换为其他类型</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">变量名</span> <span class="nx">其他类型</span> <span class="p">=</span> <span class="nx">其他类型</span><span class="p">(</span><span class="nx">结构体变量</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 其他类型转换为结构体类型</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">变量名</span> <span class="nx">结构体类型</span> <span class="p">=</span> <span class="nx">结构体类型</span><span class="p">(</span><span class="nx">其他类型变量</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="接口">接口
+</h3><h4 id="接口声明">接口声明
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">接口名</span> <span class="kd">interface</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">方法名1</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span> <span class="nx">返回值类型</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">方法名2</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span> <span class="nx">返回值类型</span>
+</span></span><span class="line"><span class="cl">    <span class="err">···</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 示例</span>
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Animal</span> <span class="kd">interface</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">Speak</span><span class="p">()</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="接口实现">接口实现
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">结构体类型</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 结构体字段</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">结构体类型变量</span> <span class="nx">结构体类型</span><span class="p">)</span> <span class="nx">方法名</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span> <span class="nx">返回值类型</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 方法体</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 示例</span>
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Dog</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">d</span> <span class="nx">Dog</span><span class="p">)</span> <span class="nf">Speak</span><span class="p">()</span> <span class="kt">string</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s">&#34;Woof!&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="空接口">空接口
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">接口名</span> <span class="kd">interface</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 示例</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">myVar</span> <span class="kd">interface</span><span class="p">{}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><strong>接口的内容很多点一下<a class="link" href="https://www.runoob.com/go/go-interfaces.html"  target="_blank" rel="noopener"
+    >这里</a>跳转菜鸟教程</strong></p>
+<h3 id="错误处理">错误处理
+</h3><h4 id="错误声明">错误声明
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">错误变量</span> <span class="kt">error</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 示例</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">err</span> <span class="kt">error</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="错误处理-1">错误处理
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">错误变量</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 错误处理</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 示例</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Error:&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="自定义错误">自定义错误
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">错误类型</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">字段1</span> <span class="nx">字段类型</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">字段2</span> <span class="nx">字段类型</span>
+</span></span><span class="line"><span class="cl">    <span class="err">···</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">错误类型变量</span> <span class="nx">错误类型</span><span class="p">)</span> <span class="nf">Error</span><span class="p">()</span> <span class="kt">string</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s">&#34;错误信息&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 示例</span>
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">MyError</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Message</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">e</span> <span class="nx">MyError</span><span class="p">)</span> <span class="nf">Error</span><span class="p">()</span> <span class="kt">string</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">Message</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="触发自定义错误">触发自定义错误
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="nx">错误变量</span> <span class="p">=</span> <span class="nx">错误类型</span><span class="p">{</span><span class="nx">值1</span><span class="p">,</span> <span class="nx">值2</span><span class="p">,</span> <span class="err">···</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 示例</span>
+</span></span><span class="line"><span class="cl"><span class="nx">err</span> <span class="p">=</span> <span class="nx">MyError</span><span class="p">{</span><span class="nx">Message</span><span class="p">:</span> <span class="s">&#34;Something went wrong&#34;</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><strong>错误处理的内容很多点一下<a class="link" href="https://www.runoob.com/go/go-error-handling.html"  target="_blank" rel="noopener"
+    >这里</a>跳转菜鸟教程</strong></p>
+<h3 id="并发多线程">并发（多线程）
+</h3><h4 id="goroutine最简单最轻量">Goroutine(最简单最轻量)
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">go</span> <span class="nx">函数名</span><span class="p">(</span><span class="nx">参数列表</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 示例</span>
+</span></span><span class="line"><span class="cl"><span class="k">go</span> <span class="nf">myFunction</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其中<code>myFunction</code>是一个函数名，使用<code>go</code>调用这个函数会启动一个新线程去执行这个函数。</p>
+<hr>
+<p><a class="link" href="https://www.runoob.com/go/go-concurrent.html"  target="_blank" rel="noopener"
+    >这里</a></p>
+
 </section>
 
 
