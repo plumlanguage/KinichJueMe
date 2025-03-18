@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="开始 创建项目 1.创建有一个文件夹并进入\n1 2 mkdir hello cd hello 以hello文件名打比方\n初始化mod文件 mod文件可以在我们的项目处在GitHub的时候快捷的被他人引用。通过一下命令可以快速添加初始化应该mod文件。\n">
 <title>Go语言学习笔记</title>
 
 <link rel='canonical' href='https://plumlanguage.github.io/KinichJueMe/p/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
 
 <link rel="stylesheet" href="/KinichJueMe/scss/style.min.b41fbeb1758861b170a462ca5c5b93b973caa976a8f1c39fb877a49158ef60fb.css"><meta property='og:title' content="Go语言学习笔记">
-<meta property='og:description' content="">
+<meta property='og:description' content="开始 创建项目 1.创建有一个文件夹并进入\n1 2 mkdir hello cd hello 以hello文件名打比方\n初始化mod文件 mod文件可以在我们的项目处在GitHub的时候快捷的被他人引用。通过一下命令可以快速添加初始化应该mod文件。\n">
 <meta property='og:url' content='https://plumlanguage.github.io/KinichJueMe/p/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
 <meta property='og:site_name' content='KinichJueMe'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-03-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-17T00:00:00&#43;00:00'/><meta property='og:image' content='https://plumlanguage.github.io/KinichJueMe/p/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/go.png' />
 <meta name="twitter:title" content="Go语言学习笔记">
-<meta name="twitter:description" content=""><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="开始 创建项目 1.创建有一个文件夹并进入\n1 2 mkdir hello cd hello 以hello文件名打比方\n初始化mod文件 mod文件可以在我们的项目处在GitHub的时候快捷的被他人引用。通过一下命令可以快速添加初始化应该mod文件。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://plumlanguage.github.io/KinichJueMe/p/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/go.png' />
     <link rel="shortcut icon" href="/KinichJueMe/static/favicon.ico" />
 
@@ -252,7 +252,51 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#开始">开始</a>
+      <ol>
+        <li><a href="#创建项目">创建项目</a></li>
+        <li><a href="#初始化mod文件">初始化mod文件</a></li>
+        <li><a href="#hello-world">hello world</a></li>
+        <li><a href="#运行">运行</a></li>
+        <li><a href="#其他建议看一下">其他（建议看一下）</a>
+          <ol>
+            <li><a href="#构建exe">构建exe</a></li>
+            <li><a href="#导入第三方库">导入第三方库</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="has-image main-article">
@@ -328,7 +372,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 0 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -343,7 +387,159 @@
     <section class="article-content">
     
     
-    
+    <h2 id="开始">开始
+</h2><h3 id="创建项目">创建项目
+</h3><p>1.创建有一个文件夹并进入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir hello
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> hello
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>以<code>hello</code>文件名打比方</em></p>
+<h3 id="初始化mod文件">初始化mod文件
+</h3><p>mod文件可以在我们的项目处在GitHub的时候快捷的被他人引用。通过一下命令可以快速添加初始化应该mod文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ go mod init example/hello
+</span></span><span class="line"><span class="cl">go: creating new go.mod: module example/hello
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>其中的<code>example/hello</code>是项目地址，如果有GitHub可以是<code>github.com/你的账号名称/此项目对应的仓库</code></em></p>
+<h3 id="hello-world">hello world
+</h3><p>在刚刚创建完成的go项目中创建应该以<code>.go</code>结尾的go代码文件。</p>
+<blockquote>
+<p>下面我会使用<code>hello.go</code></p></blockquote>
+<p>这是应该古老的仪式，据说起源于一本漫画书中有一个人说了一句“Hello world!”。so，以下代码是go的输出hello world。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">main</span> <span class="c1">// 声明一个包（包是一种用于对 函数，它由同一目录中的所有文件组成）。main</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span> <span class="c1">// 导入fmt包，这个包在go中用于处理一些常见需求</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// 主函数main</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, World!&#34;</span><span class="p">)</span> <span class="c1">// 输出Hello, World!</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>将上面的代码复制到<code>hello.go</code>并保存。</p>
+<h3 id="运行">运行
+</h3><p>如果是我的话应该会用:<code>go run hello.go</code></p>
+<p>但是官方是:<code>go run .</code></p>
+<blockquote>
+<p>我而不是很清楚这个<code>.</code>和这个<code>go run</code>组合在一起代表什么，字面意思是<strong>运行所有</strong>！？</p></blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ go run .
+</span></span><span class="line"><span class="cl">Hello, World!
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="其他建议看一下">其他（建议看一下）
+</h3><h4 id="构建exe">构建exe
+</h4><blockquote>
+<p>还是以上面的<code>hello.go</code>打比方</p></blockquote>
+<p><strong>1.构建单个exe</strong>：</p>
+<p>使用<code>go build &lt;go代码文件名&gt;</code></p>
+<p>这样构建的exe是以文件名命名的。</p>
+<p><strong>2.构建整个项目（推荐）</strong></p>
+<p>使用<code>go build .</code></p>
+<p>这样构建的exe是以项目名命名的。</p>
+<h4 id="导入第三方库">导入第三方库
+</h4><ol>
+<li>当您需要代码执行可能已由 其他人，您可以查找具有可在 您的代码。</li>
+</ol>
+<p>使用来自 external 模块。</p>
+<ol>
+<li>访问 pkg.go.dev 并<a class="link" href="https://pkg.go.dev/search?q=quote"  target="_blank" rel="noopener"
+    >搜索 “quote” 套餐</a>。</li>
+<li>在搜索结果中找到并单击该包 （如果您看到 ，请暂时忽略它）。<code>rsc.io/quote``rsc.io/quote/v3</code></li>
+<li>在 <strong>Documentation （文档</strong>） 部分的 <strong>Index （索引</strong>） 下，记下 您可以从代码中调用的函数列表。您将使用该函数。<code>Go</code></li>
+<li>在本页顶部，请注意 package 是 包含在模块中。<code>quote``rsc.io/quote</code></li>
+</ol>
+<p>您可以使用 pkg.go.dev 站点查找其软件包的已发布模块 具有可在您自己的代码中使用的函数。包发布在 模块 —— 比如 &ndash; 其他人可以使用它们。 随着时间的推移，模块会随着新版本的更新而得到改进，您可以升级 代码以使用改进的版本。<code>rsc.io/quote</code></p>
+<ol start="2">
+<li>
+<p>在 Go 代码中，导入包并添加调用 到它的功能。<code>rsc.io/quote``Go</code>添加突出显示的行后，您的代码应包含 以后：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="s">&#34;rsc.io/quote&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">quote</span><span class="p">.</span><span class="nf">Go</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>添加新的模块要求和总和。
+Go 将添加模块作为需求，以及 go.sum 文件，用于对模块进行身份验证。有关更多信息，请参阅在 Go 中<a class="link" href="https://golang.google.cn/ref/mod#authenticating"  target="_blank" rel="noopener"
+    >对模块进行身份验证</a> modules 参考。<code>quote</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ go mod tidy
+</span></span><span class="line"><span class="cl">go: finding module <span class="k">for</span> package rsc.io/quote
+</span></span><span class="line"><span class="cl">go: found rsc.io/quote in rsc.io/quote v1.5.2
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>运行您的代码以查看您正在调用的函数生成的消息。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ go run .
+</span></span><span class="line"><span class="cl">Don<span class="err">&#39;</span>t communicate by sharing memory, share memory by communicating.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>请注意，您的代码调用了该函数，并打印了 关于沟通的巧妙信息。<code>Go</code>
+当您运行 时，它会找到并下载包含您导入的包的模块。 默认情况下，它下载的是最新版本 &ndash; v1.5.2。`go mod tidy``rsc.io/quote</p>
+</li>
+</ol>
+
 </section>
 
 
