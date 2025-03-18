@@ -288,6 +288,23 @@
         </li>
       </ol>
     </li>
+    <li><a href="#go基础关键字与语法">go基础关键字与语法</a>
+      <ol>
+        <li><a href="#变量与常量">变量与常量</a>
+          <ol>
+            <li><a href="#关键字">关键字</a></li>
+            <li><a href="#语法">语法</a></li>
+          </ol>
+        </li>
+        <li><a href="#条件语句">条件语句</a>
+          <ol>
+            <li><a href="#if语句">if语句</a></li>
+            <li><a href="#switch-语句">switch 语句</a></li>
+            <li><a href="#select-语句">select 语句</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -372,7 +389,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 3 分钟
+                    阅读时长: 4 分钟
                 </time>
             </div>
         
@@ -539,7 +556,107 @@ Go 将添加模块作为需求，以及 go.sum 文件，用于对模块进行身
 当您运行 时，它会找到并下载包含您导入的包的模块。 默认情况下，它下载的是最新版本 &ndash; v1.5.2。`go mod tidy``rsc.io/quote</p>
 </li>
 </ol>
-
+<hr>
+<h2 id="go基础关键字与语法">go基础关键字与语法
+</h2><blockquote>
+<p>温馨提示：
+适合有其他语言基础的人哦~</p></blockquote>
+<h3 id="变量与常量">变量与常量
+</h3><h4 id="关键字">关键字
+</h4><p><strong>变量</strong>：使用var关键字声明
+<strong>常量</strong>：使用const关键字声明</p>
+<h4 id="语法">语法
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// 变量声明</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">变量名称</span> <span class="nx">变量类型</span> <span class="p">=</span> <span class="nx">变量值</span> <span class="c1">// 最常见的声明方式</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">变量名称</span> <span class="o">:=</span> <span class="nx">变量值</span> <span class="c1">// 自动推断类型</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">变量名称</span><span class="p">,</span><span class="nx">变量名称</span><span class="p">,</span><span class="err">···</span> <span class="o">:=</span> <span class="nx">变量值</span><span class="p">,</span><span class="nx">变量值</span><span class="p">,</span><span class="err">···</span> <span class="c1">// 同时声明多个变量</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 常量声明</span>
+</span></span><span class="line"><span class="cl"><span class="kd">const</span> <span class="nx">常量名称</span> <span class="nx">常量类型</span> <span class="p">=</span> <span class="nx">常量值</span> <span class="c1">// 最常见的声明方式</span>
+</span></span><span class="line"><span class="cl"><span class="kd">const</span> <span class="nx">常量名称</span> <span class="o">:=</span> <span class="nx">常量值</span> <span class="c1">// 自动推断类型</span>
+</span></span><span class="line"><span class="cl"><span class="kd">const</span> <span class="nx">常量名称</span><span class="p">,</span><span class="nx">常量名称</span><span class="p">,</span><span class="err">···</span> <span class="o">:=</span> <span class="nx">常量值</span><span class="p">,</span><span class="nx">常量值</span><span class="p">,</span><span class="err">···</span> <span class="c1">// 同时声明多个常量</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="条件语句">条件语句
+</h3><h4 id="if语句">if语句
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">条件</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 条件为真时执行的代码</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 条件为假时执行的代码</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="switch-语句">switch 语句
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">switch</span> <span class="nx">变量</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="nx">值1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 当变量等于值1时执行的代码</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="nx">值2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 当变量等于值2时执行的代码</span>
+</span></span><span class="line"><span class="cl">    <span class="err">···</span>
+</span></span><span class="line"><span class="cl">    <span class="k">default</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 当变量不等于任何值时执行的代码</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="select-语句">select 语句
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">select</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="o">&lt;-</span><span class="nx">通道1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 当通道1有数据时执行的代码</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="nx">通道2</span> <span class="o">&lt;-</span> <span class="nx">数据</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 当通道2有空间时执行的代码</span>
+</span></span><span class="line"><span class="cl">    <span class="k">default</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 当没有任何情况匹配时执行的代码</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
