@@ -7,7 +7,31 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>KinichJueMe</copyright>
-        <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://plumlanguage.github.io/KinichJueMe/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 26 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://plumlanguage.github.io/KinichJueMe/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Build</title>
+        <link>https://plumlanguage.github.io/KinichJueMe/categories/build/</link>
+        <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://plumlanguage.github.io/KinichJueMe/categories/build/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Electron</title>
+        <link>https://plumlanguage.github.io/KinichJueMe/categories/electron/</link>
+        <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://plumlanguage.github.io/KinichJueMe/categories/electron/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>模板</title>
+        <link>https://plumlanguage.github.io/KinichJueMe/categories/%E6%A8%A1%E6%9D%BF/</link>
+        <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://plumlanguage.github.io/KinichJueMe/categories/%E6%A8%A1%E6%9D%BF/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Rust</title>
         <link>https://plumlanguage.github.io/KinichJueMe/categories/rust/</link>
         <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
